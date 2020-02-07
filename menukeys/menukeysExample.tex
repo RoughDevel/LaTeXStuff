@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+
+% Must be last package called
+\usepackage[os=win]{menukeys}
+
+\renewmenumacro{\menu}[,]{angularmenus}
+% Options are: menus, roundedmenus, angularmenus
+
+\renewmenumacro{\keys}[,]{angularkeys}
+% Options are: roundedkeys, shadowroundedkeys, angularkeys,
+%              shadowedangularkeys, typerwriterkeys
+
+\renewmenumacro{\directory}[,]{hyphenatepathswithfolder}
+% Options are:  paths, pathswithfolder, pathswithblackfolder,
+%               hyphenatepaths, hyphenatepathswithfolder,
+%               hyphenatepathswithblackfolder
+
+\begin{document}
+\menu{File,Save As}\newline
+
+\directory{c,users,dumbuser}\newline
+
+\keys{A,B}
+
+\end{document}
